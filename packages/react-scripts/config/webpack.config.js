@@ -135,6 +135,10 @@ module.exports = function (webpackEnv) {
                 flexbox: 'no-2009',
               },
               stage: 3,
+              features: {
+                'nesting-rules': true,
+                'custom-media-queries': true,
+              },
             }),
             // Adds PostCSS Normalize as the reset css with default options,
             // so that it honors browserslist config in package.json
