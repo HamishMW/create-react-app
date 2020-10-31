@@ -137,7 +137,9 @@ module.exports = function (webpackEnv) {
               stage: 3,
               features: {
                 'nesting-rules': true,
-                'custom-media-queries': true,
+                'custom-media-queries': {
+                  importFrom: 'src/app/index.css',
+                },
               },
             }),
             // Adds PostCSS Normalize as the reset css with default options,
